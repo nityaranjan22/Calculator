@@ -1,0 +1,56 @@
+project (Final){
+	exename = Final
+	
+	specific (make) {
+		compile_flags += -std=c++11
+	}
+
+	Source_Files {
+		driver.cpp
+		Evaluate.cpp
+		Expr_Builder.cpp
+		Visitor.cpp
+		Expr_Node.cpp
+		BinaryExpr.cpp
+		ADD.cpp
+		SUBTRACT.cpp
+		MULTIPLY.cpp
+		DIVIDE.cpp
+		MOD.cpp
+		OPEN_PARENTHESES.cpp
+		CLOSED_PARENTHESES.cpp
+		INTEGER.cpp
+		Expr_Tree_Builder.cpp
+	}
+	Template_Files {
+		BaseArray.cpp
+		Array.cpp
+		Stack.cpp
+		Iterator.cpp
+	}
+	Header_Files{
+		BaseArray.h
+		Array.h
+		Stack.h
+		Evaluate.h
+                Expr_Builder.h
+                Expr_Tree_Builder.h
+                Visitor.h
+                Expr_Node.h
+		BinaryExpr.h
+		ADD.h
+                SUBTRACT.h
+                MULTIPLY.h
+                DIVIDE.h
+                MOD.h
+                OPEN_PARENTHESES.h
+		CLOSED_PARENTHESES.h
+                INTEGER.h
+		Iterator.h
+	}
+	Inline_Files{
+		BaseArray.inl
+		Array.inl
+		Stack.inl
+	}
+}
